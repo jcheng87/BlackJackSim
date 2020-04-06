@@ -13,11 +13,11 @@ class Deck:
     # shuffle new_deck
     def shuffle(self):
         shuffle(self.new_deck)
-        print(self.new_deck)
+
 
     # remove card from deck
     def remove_card(self):
-        return self.new_deck.pop()
+        self.new_deck.pop()
 
 
 class Hand:
@@ -100,17 +100,17 @@ def choices(self):
         print('invalid choice')
 
 
-# created & shuffles deck
-deck_1 = Deck()
-deck_1.shuffle()
+# # created & shuffles deck
+# deck_1 = Deck()
+# deck_1.shuffle()
 
-# created dealer & player
-dealer = Player('Dealer', Hand())
-playerName = input("Enter Player's Name: ")
-player = Player(playerName, Hand())
+# # created dealer & player
+# dealer = Player('Dealer', Hand())
+# playerName = input("Enter Player's Name: ")
+# player = Player(playerName, Hand())
 
-# deal deck
-deal(deck_1)
+# # deal deck
+# deal(deck_1)
 
 #
 
